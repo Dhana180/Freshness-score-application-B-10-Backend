@@ -169,6 +169,13 @@ def payment():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/")
+def home():
+    return {
+        "message": "Freshness API is running 🚀",
+        "status": "success"
+    }
+
 # ── RUN ──
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
