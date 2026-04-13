@@ -1,11 +1,10 @@
-flask==3.0.3
-flask-cors==4.0.1
-scikit-learn
+flask
+flask-cors
+gunicorn
 pandas
 numpy
+scikit-learn
 joblib
+python-dotenv
 razorpay
 firebase-admin
-python-dotenv
-gunicorn
-pillow
