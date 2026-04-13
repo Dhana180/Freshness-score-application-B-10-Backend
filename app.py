@@ -27,7 +27,12 @@ app.config.update(
 )
 
 # ✅ CORS FIX (ALLOW DEPLOYED FRONTEND)
-CORS(app, supports_credentials=True)
+CORS(app, supports_credentials=True, origins=[
+    "http://localhost:5173", 
+    "http://localhost:5174", 
+    "http://localhost:3000",
+    "https://freshness-score-application-b-10.vercel.app"
+])
 
 # ── Razorpay ──
 RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID", "")
