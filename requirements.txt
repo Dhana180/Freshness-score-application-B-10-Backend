@@ -7,3 +7,5 @@ joblib
 razorpay
 firebase-admin
 python-dotenv
+gunicorn
+pillow
